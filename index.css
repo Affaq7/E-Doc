@@ -1,0 +1,170 @@
+/* Import Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background */
+.bg-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bg-image {
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/bg01.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: 1;
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    z-index: 2;
+}
+
+/* Page Content */
+.page-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 5%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.edoc-logo-sub {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.8);
+    margin-left: 0.5rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.nav-item:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.register-btn {
+    background: white;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.register-btn:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.gradient-text {
+    display: block;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtext {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 1rem 0 2rem;
+    line-height: 1.6;
+}
+
+/* Feature Pills */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-pill {
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 9999px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(59,130,246,0.5);
+}
+
+/* Footer Note */
+.footer-note {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
